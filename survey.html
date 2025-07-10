@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+    </head>
+    <body>
+       <h1 id="title">School of Music Survey Form</h1>
+       <p id="description">Thank you for taking the time to help us improve our program.</p>
+       <form id="survey-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name" id="name-label">Name (required):</label>
+                <input 
+                    type="text" 
+                    required 
+                    id="name" 
+                    name="name" 
+                    placeholder="Enter your name here"
+                    size="25"><br>
+            <label for="email" id="email-label">Email (required):</label>
+                <input 
+                    type="email"
+                    id="email" 
+                    required
+                    placeholder="example@email.com"
+                    size="20"><br>
+            <label for="age" id="number-label">Age (optional):</label>
+                <input 
+                    type="number" 
+                    id="number" 
+                    placeholder="18"
+                    min="16" 
+                    max="100"><br>
+        </fieldset>
+        <p>Which option best describes your current role?</p>
+        <select name="current-role" id="dropdown">
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+            <option value="alumni">Alumni</option>
+        </select>
+        <p>What is your major?</p>
+        <label for="education">Music Education</label>
+        <input 
+            type="radio"
+            id="education"
+            value="education"
+            name="major">
+        <label for="performance">Music Performance</label>
+        <input 
+            type="radio"
+            id="performance"
+            value="performance"
+            name="major">
+        <label for="double">Double Major</label>
+        <input 
+            type="radio"
+            id="double"
+            value="double"
+            name="major">
+        <p>Which new ensembles should we offer?</p>
+        <label for="wind-ensemble">Wind Ensemble</label>
+        <input 
+            type="checkbox"
+            id="wind-ensemble"
+            name="wind-ensemble"
+            value="wind-ensemble">
+        <label for="brass-ensemble">Brass Ensemble</label>
+        <input 
+            type="checkbox"
+            id="brass-ensemble"
+            name="brass-ensemble"
+            value="brass-ensemble">
+        <label for="symphonic-orchestra">Symphonic Orchestra</label>
+        <input 
+            type="checkbox"
+            id="symphonic-orchestra"
+            name="symphonic-orchestra"
+            value="symphonic-orchestra">
+        <label for="baroque-ensemble">Baroque Ensemble</label>
+        <input 
+            type="checkbox"
+            id="baroque-ensemble"
+            name="baroque-ensemble"
+            value="baroque-ensemble">
+        <label for="new-music-ensemble">New Music Ensemble</label>
+        <input 
+            type="checkbox"
+            id="new-music-ensemble"
+            name="new-music-ensemble"
+            value="new-music-ensemble">
+        <p>Other Comments</p>
+        <textarea name="comments" id="comments" cols="40" rows="10"></textarea>
+        <button type="submit" id="submit">Submit</button>
+       </form>
+    </body>
+</html>
